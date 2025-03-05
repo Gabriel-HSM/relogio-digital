@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio digital</title>
-
     <link rel="shortcut icon" href="imagens/clock.png" type="image/x-icon"> <!-- Colocar ícone na guia-->
-
     <link rel="stylesheet" href="style/style.css"><!--Link estilo-->
-
 </head>
-<body onload="load()">
+
+<body onload="startClock()"> <!--Puxa a função StartClock ao carregar a página-->
     <header>
         <h1>Agora são...</h1>
     </header>
-    <section>
 
+    <section><!--Seção branca do site-->
         <div id="clock" class="clock"></div>
-        <div id="message">boa noite</div>
+        <div class="img">
+            <img src="imagens/manha.png" id="img"  alt="imagem referente a hora do dia">
+        </div>
+    <div id="message" class="message">Boa Noite!!</div>
     </section>
+
     <footer>
-        &copy; feitoporgabriel
+        &copy; feito por Gabriel-HSM
     </footer>
     <script src="script/script.js"></script>
 </body>
-</html>
+</html><!-- Referenciar classe no CSS é . e id é #-->
